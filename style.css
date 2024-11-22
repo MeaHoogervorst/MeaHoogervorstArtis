@@ -1,0 +1,91 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+	font-family: "Nunito", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+button {
+	border-radius: 5em;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: black;
+	color: white;
+	font-weight: 400;
+	font-size: medium;
+	cursor: pointer;
+}
+
+button p {
+	display: inline-block;
+	transition: transform 0.6s ease, opacity 0.6s ease;
+	/* Animatie-effect */
+	transform-origin: bottom center;
+	/* Punt van rotatie */
+	transform: translateY(0) rotateX(0);
+	/* Zet de tekst terug naar zijn originele positie */
+	opacity: 1;
+	/* Zorgt ervoor dat de tekst volledig zichtbaar is */
+}
+
+button:hover p {
+	transform: translateY(-100%) rotateX(100deg);
+	/* Draait en verschuift de tekst omhoog */
+	opacity: 0;
+	/* Verbergt de tekst tijdens de rotatie */
+}
+
+button:hover {
+	transform: scale(1.05);
+	/* Vergroot de knop licht bij hover */
+}
+
+button:hover {
+	transform: scale(1.05);
+	/* Vergroot de knop licht bij hover */
+}
+
+div {
+	display: flex;
+	justify-content: center;
+	gap: 3%;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
+	flex-grow: 1;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 3em;
+	flex-grow: 1;
+	list-style-type: none;
+}
+
+nav ul li {
+	background-color: lightgrey;
+	padding: 9px;
+	border-radius: 10px;
+}
+
+img {
+	height: 60px;
+}
+
+section {}
